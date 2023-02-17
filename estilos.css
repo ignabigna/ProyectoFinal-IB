@@ -1,12 +1,13 @@
 body {
-   background-color:#ffffff;  
+
+   background-color:#000000;  
    font-family: "Roboto", sans-serif;
-   color: #545E6C;
+   color: #ffffff;
    font-size: 14px;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
-
-  
+    padding: 25px;
+ 
 }
 
 /**
@@ -15,16 +16,17 @@ BARRA LATERAL------------------------------
 .barralateral {
    background: #555f64;
    position: absolute;
-   right: 0;
+   right: 50px;
    width: 240px;
    height: 100%;
    min-height: 800px;
    color: #fff;
+   border-radius: 20px 20px 20px 20px;
  }
  .barralateral-contenedor {
    background: #555f64;
    position: absolute;
-   right: 0;
+   border-radius: 20px 20px 20px 20px;
    width: 240px;
    height: 100%;
    min-height: 800px;
@@ -32,16 +34,92 @@ BARRA LATERAL------------------------------
  }
 
  .barralateral-contenedor .presentacion {
-   padding: 30px;
+   border-radius: 0px 0px 20px 20px;
+  padding: 20px;
    background: rgba(0, 0, 0, 0.2);
    text-align: center;
-   color: #fff;
+   background-color: #fff;
+ 
  }
  .barralateral-contenedor .presentacion .foto {
-   margin-bottom: 15px;
-   height: 150px;
+   margin-bottom: 10px;
+   height: 200px;
    text-align: center;
+
 }
+.barralateral-contenedor .titulol {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  color: #b1b1b1;
+  position: relative;
+  margin-top: 0px;
+  margin-bottom: 20px;
+ left: 10px;
+ padding: 5px;
+}
+.barralateral-contenedor .texto {
+  font-size: 15px;
+  font-weight: 500;
+  color: #ffffff;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 2px;
+  left: 10px;
+}
+ /**
+CUERPO DEL CV-----------------------------
+*/
+.cuerpo {
+   background: rgb(77, 77, 77);
+      padding: 10px;
+padding-left: 10px;
+   padding-right: 400px;
+   min-height: 800px;
+   font-weight: 400px;
+   left: 20px;
+   border-radius: 20px 20px 20px 20px;
+
+   
+ }
+ .cuerpo .texto {
+   font-size: 20px;
+   font-weight: 500;
+   color: #8b8b8b;
+   position: relative;
+   margin-top: 0;
+   margin-bottom: 20px;
+   text-transform: none;
+   padding: 10px;
+ }
+ .cuerpo .texto .titulo {
+   text-transform: uppercase;
+   font-size: 30px;
+   font-weight: 600;
+   color: #ffffff;
+   position: relative;
+   margin-top: 0;
+   margin-bottom: 20px;
+    padding: 20px;
+
+ }
+ .titulop {
+   text-transform: uppercase;
+   font-size: 50px;
+   font-weight: 700;
+   color: #b1b1b1;
+   position: relative;
+   margin-top: 0;
+   margin-bottom: 20px;
+   padding: 5px;
+   padding-right: 10px;
+   left: 10px;
+   text-align: center;
+ }
+ 
+
  /**
 ----------------------
 */
@@ -66,3 +144,31 @@ BARRA LATERAL------------------------------
     background-color: #000000;
     color: #ffffff;
  }
+
+
+/**
+Sitio con responsive design-----------------------------
+*/
+
+
+ @media (max-width: 767.98px) {
+   .barralateral {
+     position: static;
+     width: inherit;
+   }
+   .barralateral-contenedor {
+      position: static;
+      width: inherit;
+    }
+
+   .cuerpo {
+     padding: 20px;
+   }
+ 
+   .cuerpo .time {
+     position: static;
+     display: block;
+     margin-top: 5px;
+   }
+
+}
